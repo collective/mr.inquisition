@@ -166,7 +166,7 @@ class ContentMatrix(BrowserView):
         product_ids.sort()
         if 'Unknown' in product_ids:
             idx = product_ids.index('Unknown')
-            product_ids = (product_ids[:idx] + product_ids[idx+1:] +
+            product_ids = (product_ids[:idx] + product_ids[idx + 1:] +
                            [product_ids[idx]])
         result = []
         for product_id in product_ids:

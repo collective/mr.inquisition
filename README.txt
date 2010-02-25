@@ -56,4 +56,3 @@ Usage
 The mr.inquisition package offers a number of views which allow you to
 gain insight in the ZODB at hand. Your best bet is to start with the
 ``@@inquisition`` view. This view lists all the options you've got.
-
