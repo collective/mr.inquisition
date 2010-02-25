@@ -48,8 +48,8 @@ setup(name='mr.inquisition',
       description="A package to help with exploring a Plone site.",
       long_description=long_description,
       classifiers=[
-        "Intended Audience :: Developers"
-        "Framework :: Plone"
+        "Intended Audience :: Developers",
+        "Framework :: Plone",
         "Programming Language :: Python",
         "Topic :: Software Development :: Libraries :: Python Modules",
         ],
