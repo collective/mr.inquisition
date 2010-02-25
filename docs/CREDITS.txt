@@ -8,6 +8,6 @@ Credits
   van Rees <http://zestsoftware.nl/about-us/our-team/maurits>`_ (both also from
   Zest Software) came up with the idea and wrote the original version.
 
-* `Vincent Prêtre <http://zestsoftware.nl/about-us/our-team/vincent>`_ (again:
+* `Vincent Pretre <http://zestsoftware.nl/about-us/our-team/vincent>`_ (again:
   Zest Software) assisted me with the depth first search to show the content and
   their (accumulated) size.
