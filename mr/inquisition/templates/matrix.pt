@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title tal:content="view/title" />
+    <style type="text/css">
+        tr.highlight {
+            background-color: #eeeeee;
+        }
+    </style>
+  </head>
+  <body>
+    <table tal:define="markup not: view/raw">
+      <thead>
+        <tr tal:attributes="class python: markup and 'highlight' or ''">
+          <td>Product</td>
+          <td>portal_type</td>
+          <td>total</td>
+          <td tal:repeat="folder view/folders"
+              tal:content="folder"/>
+        </tr>
+      </thead>
+      <tbody>
+        <tal:row repeat="row view/type_per_folder">
+            <tr tal:define="odd repeat/row/odd;
+                            class python: markup and odd and 'highlight' or 'plain'"
+                tal:attributes="class class">
+              <td tal:repeat="column row"
+                  tal:content="structure column" />
+            </tr>
+        </tal:row>
+      </tbody>
+    </table>
+    [1]: This is not the portal_type but the meta_type.
+  </body>
+</html>

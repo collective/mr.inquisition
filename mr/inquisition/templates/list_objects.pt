@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title tal:content="view/title" />
+    <style type="text/css">
+        tr.highlight {
+            background-color: #eeeeee;
+        }
+    </style>
+  </head>
+  <body>
+    <table tal:define="markup not: view/raw">
+      <thead>
+        <tr tal:attributes="class python: markup and 'highlight' or ''">
+          <td>path</td>
+          <td>size</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tal:row repeat="row view/list_objects">
+            <tr tal:define="odd repeat/row/odd;
+                            class python: markup and odd and 'highlight' or 'plain'"
+                tal:attributes="class class">
+              <td tal:condition="not: markup"
+                  tal:content="row/title" />
+              <td tal:condition="markup">
+                <a href=""
+                   tal:attributes="href row/url"
+                   tal:content="row/title" />
+              </td>
+              <td tal:content="python: markup and view.thousands(row.size) or row.size" />
+            </tr>
+        </tal:row>
+      </tbody>
+    </table>
+  </body>
+</html>

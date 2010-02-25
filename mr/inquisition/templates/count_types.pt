@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Content types grouped by products</title>
+  </head>
+  <body>
+    <h1>Content types grouped by products</h1>
+    <h2>Summary</h2>
+    <ul tal:define="summary view/summary">
+      <li>Number of products: <span tal:content="summary/products" /></li>
+      <li>Number of objects of these products: <span tal:content="summary/objects" /></li>
+    </ul>
+    <tal:products repeat="product view/products">
+      <h2 tal:content="product/id" />
+      <span tal:condition="not: product/installed">Product is not installed</span>
+      <table tal:condition="product/content_types">
+        <tr tal:repeat="ctype product/content_types">
+          <td tal:content="ctype/number" />
+          <td tal:content="ctype/portal_type" />
+        </tr>
+      </table>
+      <p tal:condition="not: product/content_types">
+        No content types registered for this product
+      </p>
+    </tal:products>
+  </body>
+</html>

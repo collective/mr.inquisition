@@ -1,0 +1,43 @@
+<configure
+    xmlns="http://namespaces.zope.org/browser">
+
+  <page
+      for="*"
+      name="inquisition"
+      template="templates/main.pt"
+      permission="cmf.ManagePortal"
+      />
+
+  <page
+      for="*"
+      name="content-matrix"
+      class=".browser.ContentMatrix"
+      template="templates/matrix.pt"
+      permission="cmf.ManagePortal"
+      />
+
+  <page
+      for="*"
+      name="content-matrix-size"
+      class=".browser.ContentMatrixSize"
+      template="templates/matrix.pt"
+      permission="cmf.ManagePortal"
+      />
+
+  <page
+      for="*"
+      name="count-content-types"
+      class=".browser.CountTypes"
+      template="templates/count_types.pt"
+      permission="cmf.ManagePortal"
+      />
+
+  <page
+      for="*"
+      name="list-object-sizes"
+      class=".browser.ListObjectSizes"
+      template="templates/list_objects.pt"
+      permission="cmf.ManagePortal"
+      />
+
+</configure>

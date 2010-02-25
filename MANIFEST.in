@@ -1,0 +1,4 @@
+include README.txt
+include docs/*
+recursive-include mr *.zcml
+recursive-include mr *.pt

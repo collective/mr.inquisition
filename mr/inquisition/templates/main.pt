@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title>mr.inquisition main page</title>
+  </head>
+  <body>
+    <h1>mr.inquisition main page</h1>
+    <p>
+      The pages (browser views) offered by the mr.inquisition package are meant
+      to give an insight in the contents of a Plone site. This can be helpful
+      when e.g. migrating the site to another Plone version.
+    </p>
+    <p>
+      The target audience is developers. Even though they may also
+      like slick looking pages, the focus is on functionality, not
+      esthetics.
+    </p>
+    <ul>
+      <li>
+        <a href="@@content-matrix">Content types vs Folders Matrix</a>
+        (<a href="@@content-matrix?raw=1">raw version for copy/paste</a>)<br />
+        This view provides a matrix with the content types on one axis
+        and the folderish items on the other.<br />
+        Scope: current context.
+      </li>
+      <li>
+        <a href="@@content-matrix-size">Content type sizes vs Folders Matrix</a>
+        (<a href="@@content-matrix-size?raw=1">raw version for copy/paste</a>)<br />
+        This view provides a matrix with the size of the objects of a certain
+        content type on one axis and the folderish items on the other.<br />
+        Scope: current context.
+      </li>
+      <li>
+        <a href="@@list-object-sizes">List object sizes</a>
+        (<a href="@@list-object-sizes?raw=1">raw version for copy/paste</a>)<br />
+        Show a list of all objects (found by ZopeFind) and their size. Sizes of
+        folderish objects also include the sum of their children.<br />
+        Scope: current context.
+      </li>
+      <li>
+        <a href="@@count-content-types">Content types grouped by
+        products</a><br />
+        Provides an insight in how many object there are in the Plone site per
+        content type. Group them by product, installed or not.<br />
+        Scope: the whole Plone site.
+      </li>
+    </ul>
+  </body>
+</html>
