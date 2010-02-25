@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 import codecs
 import os
 
-version = '0.1.1'
+version = '0.2dev'
 
 setup(name='mr.inquisition',
       version=version,
