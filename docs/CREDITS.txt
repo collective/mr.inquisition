@@ -1,7 +1,7 @@
 Credits
 =======
 
-* `Mark van Lent <http://zestsoftware.nl/about-us/our-team/mark>`_
+* `Mark van Lent <https://www.vlent.nl/about>`_
   (Zest Software) initiated this package.
 
 * `Fred van Dijk <http://zestsoftware.nl/about-us/our-team/fred>`_ and `Maurits

@@ -4,7 +4,7 @@ Changelog
 0.2 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Move the repository to the Plone Collective repository. [markvl]
 
 
 0.1.1 (2010-02-25)
