@@ -104,8 +104,7 @@ class ContentMatrix(BrowserView):
         found_objects = {}
         for item in context.objectValues():
             try:
-                if (item.isPrincipiaFolderish and
-                    item.meta_type):
+                if item.isPrincipiaFolderish and item.meta_type:
                     found_objects[item.getId()] = \
                         self._find_objects_in_location(item, size)
             except AttributeError:
@@ -199,7 +198,7 @@ class ContentMatrix(BrowserView):
                 meta_type = contenttype.meta_type
                 for folder in folders:
                     if (meta_type not in types_per_folder[folder] or
-                        types_per_folder[folder][meta_type] == 0):
+                            types_per_folder[folder][meta_type] == 0):
                         output.append('&nbsp;')
                     else:
                         number = types_per_folder[folder][meta_type]
