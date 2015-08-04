@@ -4,6 +4,10 @@ Changelog
 0.2 (unreleased)
 ----------------
 
+- Load the CMFCore zcml so we can use the permissions.  This avoids a
+  possible startup error on Plone 4.
+  [maurits]
+
 - Added ``z3c.autoinclude``-entrypoint to mark this as a Plone-plugin.
   This avoids the need to explicitly load the zcml-slug.
   [WouterVH]

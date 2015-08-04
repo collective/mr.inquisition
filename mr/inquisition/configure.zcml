@@ -1,6 +1,9 @@
 <configure
     xmlns="http://namespaces.zope.org/browser">
 
+  <!-- Include CMFCore for permissions. -->
+  <include package="Products.CMFCore" />
+
   <page
       for="*"
       name="inquisition"
