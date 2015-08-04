@@ -12,11 +12,7 @@ version = '0.2dev'
 long_description = (
     read('README.rst')
     + '\n' +
-    read('docs/CREDITS.txt')
-    + '\n' +
-    read('docs/TODO.txt')
-    + '\n' +
-    read('docs/HISTORY.txt')
+    read('CHANGES.rst')
     )
 
 setup(name='mr.inquisition',
