@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.2 (unreleased)
+0.2 (2015-08-04)
 ----------------
 
 - Load the CMFCore zcml so we can use the permissions.  This avoids a
