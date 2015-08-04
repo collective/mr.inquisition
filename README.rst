@@ -30,13 +30,16 @@ Installation
 
 When you are using zc.buildout, the installation is quite simple. All you
 need to do is make sure the ``mr.inquisition`` package is listed in the
-``eggs`` and ``zcml`` sections, e.g.::
+``eggs`` option of your Zope 2 instance or zeoclient, e.g.::
 
-  [buildout]
+  [instance]
   ...
   eggs =
       ...
       mr.inquisition
+
+On Plone 3.2 you will need to add it to the ``zcml`` option too, on
+later Plone versions this is automated::
 
   [instance]
   ...
