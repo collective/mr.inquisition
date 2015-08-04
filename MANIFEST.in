@@ -1,4 +1,3 @@
-include README.txt
-include docs/*
-recursive-include mr *.zcml
-recursive-include mr *.pt
+include *rst
+graft mr
+global-exclude *.pyc
